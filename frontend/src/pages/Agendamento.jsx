@@ -114,7 +114,12 @@ export default function Agendamento() {
         />
 
 
-        <select name="modalidade" value={dados.modalidade} onChange={handleChange} className="input">
+        <select name="modalidade"
+            title="Esolha o tipo de participação"
+            value={dados.modalidade} 
+            onChange={handleChange} 
+            className="input"
+          >
           <option value="online">Participação Online </option>
           <option value="presencial">Participação Presencial </option>
         </select>
